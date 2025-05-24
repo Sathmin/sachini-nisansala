@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sachini Nisansala - Professional Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Animation for the intro text */
+        .animate-text {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s ease-out forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Hide dashboard initially */
+        #dashboard {
+            display: none;
+        }
+
+        /* Social media button hover effects */
+        .social-btn {
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .social-btn:hover {
+            transform: scale(1.1);
+            background-color: #1e40af;
+        }
+
+        /* Ensure smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Intro Animation Section -->
+    <div id="intro" class="flex items-center justify-center h-screen bg-gradient-to-r from-blue-500 to-indigo-600">
+        <h1 class="text-5xl md:text-7xl text-white font-bold animate-text">Sachini Nisansala</h1>
+    </div>
+
+    <!-- Dashboard Section -->
+    <div id="dashboard" class="min-h-screen bg-gray-100">
+        <!-- Header -->
+        <header class="bg-white shadow">
+            <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+                <h1 class="text-3xl font-bold text-gray-900">Sachini Nisansala</h1>
+                <p class="mt-1 text-sm text-gray-600">Professional Portfolio</p>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+            <div class="px-4 py-6 sm:px-0">
+                <!-- Profile Section -->
+                <div class="bg-white shadow overflow-hidden sm:rounded-lg mb-8">
+                    <div class="px-4 py-5 sm:px-6">
+                        <h2 class="text-2xl font-semibold text-gray-900">About Me</h2>
+                        <p class="mt-1 text-gray-600">Welcome to my professional portfolio! I am dedicated to excellence and passionate about connecting with others. Explore my work and get in touch through my social media channels.</p>
+                    </div>
+                </div>
+
+                <!-- Social Media Buttons -->
+                <div class="bg-white shadow overflow-hidden sm:rounded-lg">
+                    <div class="px-4 py-5 sm:px-6">
+                        <h2 class="text-2xl font-semibold text-gray-900">Connect With Me</h2>
+                        <div class="mt-4 flex flex-wrap gap-4">
+                            <a href="https://wa.me/+94703804927" target="_blank" class="social-btn bg-green-500 text-white px-6 py-3 rounded-md hover:bg-green-600">
+                                WhatsApp
+                            </a>
+                            <a href="https://t.me/+94703804927" target="_blank" class="social-btn bg-blue-400 text-white px-6 py-3 rounded-md hover:bg-blue-500">
+                                Telegram
+                            </a>
+                            <a href="mailto:sachininisansala914@gmail.com" target="_blank" class="social-btn bg-red-500 text-white px-6 py-3 rounded-md hover:bg-red-600">
+                                Gmail
+                            </a>
+                            <a href="https://www.facebook.com/sachini.nisansala.467124?mibextid=ZbWKwL" target="_blank" class="social-btn bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700">
+                                Facebook
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-white shadow mt-8">
+            <div class="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
+                <p class="text-center text-gray-600">&copy; 2025 Sachini Nisansala. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript for Intro Animation -->
+    <script>
+        window.onload = function() {
+            setTimeout(() => {
+                document.getElementById('intro').style.display = 'none';
+                document.getElementById('dashboard').style.display = 'block';
+            }, 2000); // Intro displayed for 2 seconds
+        };
+    </script>
+</body>
+</html>
